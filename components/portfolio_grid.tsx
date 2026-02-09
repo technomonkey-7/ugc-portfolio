@@ -69,7 +69,7 @@ export function PortfolioGrid() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: index * 0.1 }}
-                        className="group relative w-full md:max-w-[calc(50%-1.5rem)] lg:max-w-[calc(33.333%-1.5rem)] min-w-[300px] aspect-[9/16] cursor-pointer overflow-hidden rounded-xl bg-neutral-900"
+                        className="group relative w-full md:max-w-[calc(50%-1.5rem)] lg:max-w-[calc(33.333%-1.5rem)] sm:min-w-[300px] aspect-[9/16] cursor-pointer overflow-hidden rounded-xl bg-neutral-900"
                         onClick={() => {
                             const url = project.videoFileUrl || project.videoUrl;
                             if (url) window.open(url, '_blank');

@@ -39,9 +39,9 @@ export function Hero() {
     return (
         <section className="relative flex min-h-[95vh] w-full flex-col justify-center px-4 md:px-8 lg:px-16 pt-20 md:pt-0">
             {/* Background Effects */}
-            <div className="absolute top-[-20%] left-[-10%] h-[700px] w-[700px] rounded-full bg-violet-600/30 blur-[120px] pointer-events-none" />
-            <div className="absolute bottom-[-10%] right-[-5%] h-[600px] w-[600px] rounded-full bg-indigo-600/20 blur-[100px] pointer-events-none" />
-            <div className="absolute top-[40%] right-[30%] h-[400px] w-[400px] rounded-full bg-fuchsia-600/20 blur-[80px] pointer-events-none" />
+            <div className="absolute top-[-20%] left-[-10%] h-[70vw] w-[70vw] md:h-[700px] md:w-[700px] rounded-full bg-violet-600/30 blur-[60px] md:blur-[120px] pointer-events-none" />
+            <div className="absolute bottom-[-10%] right-[-5%] h-[60vw] w-[60vw] md:h-[600px] md:w-[600px] rounded-full bg-indigo-600/20 blur-[50px] md:blur-[100px] pointer-events-none" />
+            <div className="absolute top-[40%] right-[30%] h-[40vw] w-[40vw] md:h-[400px] md:w-[400px] rounded-full bg-fuchsia-600/20 blur-[40px] md:blur-[80px] pointer-events-none" />
             <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-neutral-900/50 via-black to-black" />
 
             <div className="container mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">

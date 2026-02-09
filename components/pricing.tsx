@@ -97,7 +97,7 @@ export function Pricing() {
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.1 }}
                         className={cn(
-                            "group relative flex flex-col rounded-2xl p-8 transition-all w-full md:max-w-[calc(50%-1rem)] lg:max-w-[calc(33.333%-2rem)] min-w-[300px]",
+                            "group relative flex flex-col rounded-2xl p-8 transition-all w-full md:max-w-[calc(50%-1rem)] lg:max-w-[calc(33.333%-2rem)] sm:min-w-[300px]",
                             pkg.isPopular
                                 ? "border border-neutral-700 bg-neutral-900 shadow-2xl shadow-black/50"
                                 : "border border-neutral-800 bg-neutral-900/50 backdrop-blur-sm hover:bg-neutral-900/80 hover:border-violet-500/30"
