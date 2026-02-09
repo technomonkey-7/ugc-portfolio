@@ -22,14 +22,19 @@ export function ProjectModal({ isOpen, onClose, title, description, websiteUrl, 
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
     // Prevent body scroll when modal is open
+    // Prevent body scroll when modal is open and compensate for scrollbar width
     useEffect(() => {
         if (isOpen || selectedImage) {
+            const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
             document.body.style.overflow = 'hidden';
+            document.body.style.paddingRight = `${scrollbarWidth}px`;
         } else {
             document.body.style.overflow = 'unset';
+            document.body.style.paddingRight = '0px';
         }
         return () => {
             document.body.style.overflow = 'unset';
+            document.body.style.paddingRight = '0px';
         };
     }, [isOpen, selectedImage]);
 
