@@ -46,6 +46,7 @@ export function Navbar() {
 
     return (
         <nav
+            id="main-navbar"
             className={cn(
                 'fixed top-0 z-50 w-full transition-all duration-300',
                 scrolled ? 'bg-black/50 border-b border-white/5 backdrop-blur-xl' : 'bg-transparent'
